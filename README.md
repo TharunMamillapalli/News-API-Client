@@ -1,46 +1,65 @@
 # News API Client
 
-This is a News API Client built using Kotlin and Jetpack libraries for fetching and displaying the latest news from various sources. The app allows users to search for news articles, view detailed information about each article, and save articles for later. The app supports pagination and includes a search feature to filter news by keywords.
+A Kotlin-based Android app for fetching and managing news articles using the NewsAPI.
 
-## Features
+## 🚀 Getting Started
 
-- Display a list of news articles fetched from the News API.  
-- Search for news articles by keyword.  
-- Pagination support for fetching more articles when the user scrolls to the bottom.  
-- View detailed information of selected articles.  
-- Save articles to a local database.  
-- Delete saved articles with an option to undo.  
-- Handle network errors and loading states.  
+### Prerequisites
+1. **NewsAPI Key**:
+  - Sign up for a free API key at [NewsAPI](https://newsapi.org/).
+  - Copy your API key from the dashboard after registration.
 
-## Tech Stack
+2. **Configure the App**:
+  - Create or edit the `gradle.properties` file in your project root.
+  - Add the following lines (replace `YOUR_API_KEY` with your actual key):
+    ```properties
+    MY_KEY="YOUR_API_KEY"
+    MY_URL="https://newsapi.org"
+    ```  
 
-- Kotlin  
-- Jetpack Libraries:  
-  - LiveData  
-  - ViewModel  
-  - Navigation  
-  - RecyclerView  
-  - ViewBinding  
-- Dagger-Hilt for Dependency Injection  
-- Retrofit for API calls  
-- News API for fetching the latest news  
-- Coroutines for handling asynchronous tasks  
-- Material Design for UI components  
-- Room Database for saving articles locally  
-  
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/News-API-Client.git
+   ```  
+2. Open the project in Android Studio.
+3. Build and run the app.
 
-## Key Features
+---
 
-- **Pagination**: The app automatically loads more news articles as you scroll down.  
-- **Search Functionality**: Allows users to search news articles based on keywords.  
-- **Save Articles**: Users can save articles to view them later in the saved section.  
-- **Delete and Undo Save**: Users can delete saved articles with an option to undo.  
-- **Error Handling**: Displays error messages in case of network failure.  
+## ✨ Features
+- **Latest News**: Browse headlines from global news sources.
+- **Search**: Find articles by keyword.
+- **Pagination**: Auto-load more articles on scroll.
+- **Save Articles**: Bookmark articles for offline reading.
+- **Undo Delete**: Restore accidentally deleted saved articles.
+- **Error Handling**: Graceful UI for network failures.
+
+---
+
+## 🛠️ Tech Stack
+| Category           | Technologies                                                                 |  
+|---------------------|-----------------------------------------------------------------------------|  
+| **Language**        | Kotlin                                                                      |  
+| **Architecture**    | MVVM                                                                        |  
+| **Jetpack**         | LiveData, ViewModel, Navigation, Room, RecyclerView, ViewBinding            |  
+| **Networking**      | Retrofit, OkHttp                                                            |  
+| **DI**              | Dagger-Hilt                                                                 |  
+| **Async**           | Coroutines, Flow                                                            |  
+| **UI**              | Material Design                                                             |  
+
+---
+
+## 📸 Screenshots
+
+| News Feed | Search | Saved Articles |  
+|-----------|--------|----------------|  
+| <img src="app/Screenshots/NewsHeadline1.png" width="250"> | <img src="app/Screenshots/NewsHeadlinein.png" width="250"> | <img src="app/Screenshots/saveNews.png" width="250"> |  
+
+---
 
 
-## Acknowledgments
-
-- NewsAPI for providing free access to news data.  
-- Jetpack Libraries for simplifying Android development.  
-- Room Database for local data storage.  
-- Udemy for the helpful resources used in learning the technologies behind this project.  
+## 🙌 Acknowledgments
+- Data provided by [NewsAPI](https://newsapi.org).
+- UI components from [Material Design](https://material.io).
+- Jetpack Libraries for streamlined Android development.
